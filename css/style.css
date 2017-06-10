@@ -1,0 +1,115 @@
+/*------Resets-------*/
+#main {
+  position: relative;
+  min-height: 100%;
+}
+#mainBody {
+  text-rendering: optimizeLegibility;
+}
+
+/*------Navbar items hover underline------*/
+.hvr-underline-from-center, .active {
+    -webkit-transform: translateZ(0);
+    transform: translateZ(0);
+    /*box-shadow: 0 0 1px rgba(0, 0, 0, 0);*/
+    -webkit-backface-visibility: hidden;
+    backface-visibility: hidden;
+    -moz-osx-font-smoothing: grayscale;
+    overflow: hidden;
+    font-weight: 500;
+}
+.hvr-underline-from-center:before, .active:before {
+    content: "";
+    position: absolute;
+    z-index: -1;
+    left: 50%;
+    right: 50%;
+    bottom: 0;
+  border-radius: 0;
+    background: rgba(0,0,0,0.7);
+    height: 3px;
+    -webkit-transition-property: left, right;
+    transition-property: left, right;
+    -webkit-transition-duration: 0.3s;
+    transition-duration: 0.3s;
+    -webkit-transition-timing-function: ease-out;
+    transition-timing-function: ease-out;
+}
+.hvr-underline-from-center:hover:before, .hvr-underline-from-center:focus:before, .hvr-underline-from-center:active:before,
+.active:hover:before, .active:focus:before, .active:active:before {
+    left: 0;
+    right: 0;
+}
+
+/*------Nav style-------*/
+#logo {
+  height: 30px;
+}
+#mainBody nav {
+  background-color: transparent;
+  border-style: none;
+}
+#mainBody li a {
+  color: rgba(0,0,0,0.7);
+  border-radius: 0;
+  padding-bottom: 4px;
+  margin: 10px 15px;
+  padding: 15px 1px 5px 1px;
+}
+#mainBody li a:hover {
+  color: #AFAFAF;
+}
+#mainBody #name {
+  padding-top: 25px;
+  padding-left: 1px;
+  color: black;
+}
+
+/*------Footer style-------*/
+.footer {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  /* Set the fixed height of the footer here */
+  height: 40px;
+  background-color: transparent;
+}
+.footer p {
+  color: rgba(0,0,0,0.7);
+  float: right;
+}
+.fa {
+  color: rgba(0,0,0,0.7);
+  margin: 0 10px;
+  cursor: pointer;
+}
+.fa:hover {
+  color: #AFAFAF;
+ /* -webkit-filter: invert(100%);
+  filter: invert(100%);
+*/}
+
+/*------Other style-------*/
+
+#myFirst, #mySecond {
+  background-color: #D5FFD9;
+}
+#myThird {
+  background-color: #FFFFFF;
+}
+
+/*------Animations-------*/
+
+@keyframes pulse {
+    0% {
+     transform: scale(1, 1);
+    }
+
+    50% {
+     transform: scale(1.1, 1.1);
+    }
+
+    100% {
+    transform: scale(1, 1);
+    }
+}
