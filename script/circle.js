@@ -11,17 +11,15 @@ var clicks = 0;
 var level = 0;
 var count = 0;
 var currentColor=-1;
-var background = document.getElementById("myThird");
+var background = document.getElementById("circleGame");
 var colors = ["#FFFFFF", "#800020", "#DD0F1D", "#0C090D", "#AFAFAF"];
 var backgroundWidth = 1280;
 var backgroundHeight = 700;
 var dx = 2;
 var dy = 2;
 
-console.log(background);
-
 function init() {
-  stage = new createjs.Stage("myThird");
+  stage = new createjs.Stage("circleGame");
   createjs.Ticker.setFPS(50);
 
   queue = new createjs.LoadQueue(true);
@@ -98,7 +96,6 @@ function muteMyGameSound(e) {
     createjs.Sound.muted = !createjs.Sound.muted;
   }
 }
-// if (e.keyCode == 77) createjs.Sound.muted = !createjs.Sound.muted;
 
 // function tween(){
 //   createjs.Tween.get(scoreText)
@@ -168,8 +165,6 @@ function hovered(e){
   }
   clicks++;
   levelUp();
-  // console.log("level is " + level);
-  // console.log("score is " + clicks);
 }
 
 function levelUp() {

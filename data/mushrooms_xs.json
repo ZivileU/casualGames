@@ -1,0 +1,26 @@
+{
+  "images": ["sprites/mushrooms_xs.png"],
+  "frames": {"width": 64, "heigth": 64, "regX": 0, "regY": 0},
+  "animations": {
+    "pinkCircle":[0],
+    "redCircle":[1],
+    "orangeCircle":[2],
+    "yellowCircle":[3],
+    "greenCircle":[4],
+    "blueCircle":[5],
+    "violetCircle":[6],
+    "pinkStar":[7],
+    "redStar":[8],
+    "orangeStar":[9],
+    "yellowStar":[10],
+    "greenStar":[11],
+    "blueStar":[12],
+    "violetStar":[13],
+    "pinkRomb":[14],
+    "redRomb":[15],
+    "orangeRomb":[16],
+    "yellowRomb":[17],
+    "greenRomb":[18],
+    "blueRomb":[19],
+    "violetRomb":[20]
+}

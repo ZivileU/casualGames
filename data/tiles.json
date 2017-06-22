@@ -1,0 +1,11 @@
+{
+  "images": ["sprites/tiles.png"],
+  "frames": {"width": 32, "heigth": 32, "regX": 0, "regY": 0},
+  "animations": {
+    "block":[0],
+    "coin":[1],
+    "question":[2],
+    "greyBricks":[3],
+    "lightGreyBricks":[4],
+    "lava":[5],
+}

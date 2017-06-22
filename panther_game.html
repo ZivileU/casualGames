@@ -28,12 +28,13 @@
           <ul class="nav navbar-nav navbar-right active">
             <li><a href="index.html">House</a></li>
             <li><a href="circle_game.html">Circle Game</a></li>
+            <li><a href="panther_game.html">Panther Game</a></li>
           </ul>
         </div><!--/.nav-collapse -->
       </div>
     </nav>
 
-  <canvas id="mySecond" width="1280" height="700"></canvas>
+  <canvas id="pantherGame"></canvas>
 
   <br/>
 
@@ -45,6 +46,7 @@
           <a target="_blank" href="https://github.com/ZivileU"><i class='fa fa-github fa-2x'></i></a>
           <a target="_blank" href="http://zivile.dk/Zivile%20Sliuzinskiene%20one%20page%20CV%20turquis.pdf"><i class='fa fa-user fa-2x'></i></a>
           <p class="text-muted">© 2017 Živilė Utkevičiūtė. All rights reserved</p>
+          <a id="source" href="game.zip">Source code</a>
         </div>
       </div>
     </footer>
@@ -54,6 +56,12 @@
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
   <script src="https://code.createjs.com/createjs-2015.11.26.min.js"></script>
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.0/jquery.min.js"></script>
-  <script src="script/circle.js"></script>
+  <script src="script/Game.js"></script>
+  <script src="script/Preloader.js"></script>
+  <script src="script/Objects.js"></script>
+  <script src="script/Controls.js"></script>
+  <script>
+    Game.init();
+  </script>
 </body>
 </html>

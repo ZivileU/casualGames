@@ -85,7 +85,6 @@ function tock(e){
   moveSmoke();
   stage.update(e);
   maybeAddSmoke();
-  console.log(smokes);
 }
 
 window.addEventListener("load", init);
