@@ -3,13 +3,13 @@ var Preloader = {
   loadText: new createjs.Text("", "24px helvetica", "rgba(0,0,0,0.7)"),
   load: function(){
     Game.stage.addChild(this.loadText);
+    this.queue.installPlugin(createjs.Sound);
     this.queue.on("progress", this.progress, this);
     this.queue.on("complete", Game.setupGame, Game);
     this.queue.loadManifest([
-      {id: "panther", src: "data/panther_small.json"},
-      {id: "mushrooms_xs", src: "data/mushrooms_xs.json"},
-      {id: "tiles", src: "data/tiles.json"},
+      {id: "panther", src: "data/panther.json"},
       {id: "levels", src: "data/levels.json"},
+      {id: "pantherSound", src: "audio/panther.mp3"},
       "script/Ticker.js", "script/Objects.js", "script/Controls.js"
     ]);
   },

@@ -4,11 +4,11 @@ var Controls = {
   dkd: false,
   ukd: false,
   initialize: function(){
-    window.onkeyup = this.keyUp;
-    window.onkeydown = this.keyDown;
+    window.onkeyup = Controls.keyUp;
+    window.onkeydown = Controls.keyDown;
   },
   keyUp: function(e){
-    switch (e.keycode) {
+    switch (e.keyCode) {
       case 37:
         Controls.lkd = false;
         break;
@@ -23,8 +23,8 @@ var Controls = {
         break;
     }
   },
-  keyDownwn: function(e){
-    switch (e.keycode) {
+  keyDown: function(e){
+    switch (e.keyCode) {
       case 37:
         Controls.lkd = true;
         break;
